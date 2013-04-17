@@ -131,6 +131,6 @@ A Map is a collection of key/value pairs and is represented by braces {}
 
 ### Use lein new my-app to create a skeleton project
 
-	lein new my-app
+	lein new app my-app
 
 ## Have fun!
