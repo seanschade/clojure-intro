@@ -11,6 +11,13 @@ A Simple Function
 	(+ 1 2)
 	=> 3
 
+Operators are prefix versus infix
+	(+ 1 2)
+	(1 + 2)
+
+This makes arity simple when defining functions. + is a function. 
+	(+ 1 2 3 4 5 6 7 8 9)
+	=> 45
 
 
 ## Have fun!
