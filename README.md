@@ -29,7 +29,13 @@
 	=> (0 1 2 3 4 5 6 7 8 9)
 	(apply + (range 10))
 	=> 45
-
+	;; (doc fn) will provide the documentation for any function
+	(doc range)
+	------------------------
+	clojure.core/range
+	([] [end] [start end] [start end step])
+	Returns a lazy seq of nums from start (inclusive) to end (exclusive), by step, where start defaults to 0, step to 1, and end to infinity.
+    
 ### Data Structures - List
 
 The List is the most common Clojure data structure and is represented by parentheses ()
