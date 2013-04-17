@@ -3,7 +3,7 @@
 	* `ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"`
 * Install [Leiningen](https://github.com/technomancy/leiningen)
 	* brew install leiningen
-* Open Terminal
+* Open the REPL (Read Eval Print Loop)
 	* lein repl
 
 ### A Simple Function
