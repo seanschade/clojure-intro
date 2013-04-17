@@ -50,4 +50,22 @@ The List is the most common Clojure data structure and is represented by parenth
 
 The List has a special evaluation. The first item in the list is expected to be a function. To override this behavior prefix a list with a quote '()
 
+	(def nums '(1 2 3 4 5))
+	=> 'user/nums
+	nums
+	(1 2 3 4 5)
+	(first nums)
+	=> 1
+	(last nums)
+	=> 5 
+	(rest nums)
+	=> (2 3 4 5)
+	(map inc nums)
+	=> (2 3 4 5 6)
+	nums
+	(1 2 3 4 5)
+	;; nums didn't change because it is immutable!
+	;; this is a good thing!
+
+
 ## Have fun!
