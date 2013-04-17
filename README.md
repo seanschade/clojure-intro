@@ -24,11 +24,13 @@
 
 	(+ 1 2 3 4 5 6 7 8 9)
 	=> 45
+
 	;; We can make this better
 	(range 10)
 	=> (0 1 2 3 4 5 6 7 8 9)
 	(apply + (range 10))
 	=> 45
+
 	;; (doc fn) will provide the documentation for any function
 	(doc range)
 	------------------------
@@ -41,6 +43,8 @@
 	;; How would you create a list of all the even numbers from 0 to 100?
 	(range 0 101 2)
 	=>(0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76  78 80 82 84 86 88 90 92 94 96 98 100)
+
+	;; Several options available to solve the same problem
 	(filter even? (range 101))
 	=>(0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76  78 80 82 84 86 88 90 92 94 96 98 100)
 
@@ -60,6 +64,8 @@ The List has a special evaluation. The first item in the list is expected to be 
 	=> 5 
 	(rest nums)
 	=> (2 3 4 5)
+	(take 2 nums)
+	=> (1 2)
 	(map inc nums)
 	=> (2 3 4 5 6)
 	nums
