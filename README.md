@@ -6,4 +6,10 @@
 * Open Terminal
 	* lein repl
 
+A Simple Function
+`(+ 1 2)
+ => 3`
+
+
+
 ## Have fun!
