@@ -52,7 +52,7 @@
 
 #### List
 
-The List is the most common Clojure data structure and is represented by parentheses ()
+The List is the most common Clojure collection type and is represented by parentheses ()
 
 The List has a special evaluation. The first item in the list is expected to be a function. To override this behavior prefix a list with a quote '()
 
@@ -74,9 +74,48 @@ The List has a special evaluation. The first item in the list is expected to be 
 	=> (1 2 3 4 5)
 	;; nums didn't change because it is immutable!
 	;; this is a good thing!
+	;; 
+	;; add items to a list using conj
+	(conj '(1 2 3) 4)
+	=> (4 1 2 3)
+	;; items are added to the beginning of a List
 
 #### Vector
 
+A Vector is the second most common collection type and is represented by brackets []
+
+	(def a-vec [1 2 3 4 5])
+	=> 'user/a-vec
+	a-vec
+	=> [1 2 3 4 5]
+	;; items are added to the end of a Vector
+	(conj [1 2 3] 4)
+	=> [1 2 3 4]
+	;; use the vec function to create a Vector from a sequence
+	(vec (range 10))
+	=> [0 1 2 3 4 5 6 7 8 9]
+	;; items in a Vector can be accessed by their index in constant time
+	(nth [1 2 3 4] 1)
+	=> 2
+	(get [1 2 3 4] 1)
+	=> 2
+	([1 2 3 4] 1)
+	=> 2
+	;; vectors can be used as stacks
+	(def a-stack [1 2 3])
+	=> 'user/a-stack
+	(peek a-stack)
+	=> 3
+	(pop a-stack)
+	=> [1 2]
+	;; pop returns a new vector with the last item removed
+	;; the original stack is unchanged
+	(conj a-stack 4)
+	=> [1 2 3 4]
+	a-stack
+	=> [1 2 3]
+	;; conj returns a new stack
+	;; a-stack is unchanged
 
 #### Map
 
