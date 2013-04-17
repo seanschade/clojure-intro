@@ -41,8 +41,8 @@
 	;; How would you create a list of all the even numbers from 0 to 100?
 	(range 0 101 2)
 	=>(0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76  78 80 82 84 86 88 90 92 94 96 98 100)
-
-    
+	(filter even? (range 101))
+	=>(0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76  78 80 82 84 86 88 90 92 94 96 98 100)
 
 ### Data Structures - List
 
@@ -53,7 +53,7 @@ The List has a special evaluation. The first item in the list is expected to be 
 	(def nums '(1 2 3 4 5))
 	=> 'user/nums
 	nums
-	(1 2 3 4 5)
+	=> (1 2 3 4 5)
 	(first nums)
 	=> 1
 	(last nums)
@@ -63,7 +63,7 @@ The List has a special evaluation. The first item in the list is expected to be 
 	(map inc nums)
 	=> (2 3 4 5 6)
 	nums
-	(1 2 3 4 5)
+	=> (1 2 3 4 5)
 	;; nums didn't change because it is immutable!
 	;; this is a good thing!
 
