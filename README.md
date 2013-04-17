@@ -20,6 +20,15 @@
 
 	(+ 1 2 3 4 5 6 7 8 9)
 	=> 45
+### Let's look at some other functions
+
+	(+ 1 2 3 4 5 6 7 8 9)
+	=> 45
+	;; We can make this better
+	(range 10)
+	=> (0 1 2 3 4 5 6 7 8 9)
+	(apply + (range 10))
+	=> 45
 
 ### Data Structures - List
 
