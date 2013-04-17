@@ -119,8 +119,18 @@ A Vector is the second most common collection type and is represented by bracket
 
 #### Map
 
+A Map is a collection of key/value pairs and is represented by braces {}
 
-#### Set
+	(def a-map {:a 1, :b 2, :c 3})
+	=> 'user/a-map
+	a-map
+	=> {:a 1, :b 2, :c 3}
+	;; use zipmap to create a map from 2 sequences
+	(zipmap [:a :b :c] [1 2 3])
+	=> {:c 3, :b 2, :a 1}
 
+### Use lein new my-app to create a skeleton project
+
+	lein new my-app
 
 ## Have fun!
